@@ -68,13 +68,6 @@ public class MainActivity
                 // AppLovin SDK is initialized, start loading ads
             }
         });
-//        AppLovinSdk.getInstance( this ).initializeSdk( new AppLovinSdk.SdkInitializationListener()
-//        {
-//            @Override
-//            public void onSdkInitialized(final AppLovinSdkConfiguration config)
-//            {
-//            }
-//        } );
 
         // Create interstitial ad and load it
         createInterstitialAd();
@@ -83,7 +76,7 @@ public class MainActivity
     void createInterstitialAd()
     {
         interstitialAd = new MaxInterstitialAd( "26be630dfae04154", this );
-//        interstitialAd.setListener( this );
+        interstitialAd.setListener( this );
 
         // Load the first ad
         interstitialAd.loadAd();
@@ -100,7 +93,8 @@ public class MainActivity
                 Log.d("AppLovin", "Inter ad is not ready!");
             }
         } ) );
-//        items.add( new DemoMenuItem( "Launch Mediation Debugger", () -> AppLovinSdk.getInstance( getApplicationContext() ).showMediationDebugger() ) );
+        items.add( new DemoMenuItem( "Launch Mediation Debugger",
+                () -> AppLovinSdk.getInstance( getApplicationContext() ).showMediationDebugger() ) );
         items.add( new FooterType() );
         return items;
     }
