@@ -12,7 +12,7 @@
 
         <meta-data
             android:name="applovin.sdk.key"
-            android:value="0FzCWHdx_UDPHAKpat-LoovAg0VkQoZDtgPmFq7arUCmQ8_SW1iAgIE5AcK2XngtHLyFFK0u5nKX6oQZSmCllq" />
+            android:value="SDK_KEY_HERE" />
 
         <activity
             android:name="com.my.awesome.app.SplashActivity"

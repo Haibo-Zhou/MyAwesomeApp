@@ -75,7 +75,7 @@ public class MainActivity
 
     void createInterstitialAd()
     {
-        interstitialAd = new MaxInterstitialAd( "26be630dfae04154", this );
+        interstitialAd = new MaxInterstitialAd( "inter_ad_unitID", this );
         interstitialAd.setListener( this );
 
         // Load the first ad
